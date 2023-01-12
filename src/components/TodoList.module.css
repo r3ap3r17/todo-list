@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    padding: 2.5rem;
+    background-color: rgba(27, 31, 34, 0.7);
+    width: 500px;
+    max-width: 97%;
+}
+
+.actions {
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+
+.actions input {
+    width: 100%;
+    margin-right: 2rem;
+    font-size: 1rem;
+    background: transparent;
+    padding: .5rem .75rem;
+    line-height: .25rem;
+    border: 1px solid #ffff;
+    border-radius: 4px;
+    outline: 0;
+    transition: all .35s ease;
+}
+
+.actions button {
+    font-size: 1.25rem;
+    background: transparent;
+    padding: 1rem;
+    line-height: .25rem;
+    border: 1px solid #ffff;
+    border-radius: 4px;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.actions button:hover,
+.actions input:focus,
+.list .item:hover {
+    background-color: rgba(27, 31, 34, 0.8);
+    ;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    max-height: 312px;
+    overflow: scroll;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+.list .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: inherit;
+    border-radius: 4px;
+    transition: all .25s ease;
+    cursor: default;
+}
+
+.list .item button {
+    font-size: 1.25rem;
+    background: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, .5)
+}
